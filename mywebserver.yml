@@ -2,7 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-    name: installk webserver
+  - name: installk webserver
     apt:
         name: apache2
         state: present
